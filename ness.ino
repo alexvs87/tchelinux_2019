@@ -36,7 +36,7 @@
         --------------
           2  | Select   
         --------------
-                      3  | Start  
+          3  | Start  
         --------------
           4  |   Up  
         --------------
@@ -60,7 +60,6 @@
   | 5 O   O 4 |   7 - +5V
   |___________|
 
-- Please visit http://www.allaboutcircuits.com to search for complete article!
 
 ================================================================================
   Updates
@@ -111,7 +110,7 @@ int nesLatch      = 3;    // The latch pin for the NES controller
 void setup() 
 {
   // Initialize serial port speed for the serial terminal
-  //Serial.begin(115200);
+  //Serial.begin(9600);
   
   // Set appropriate pins to inputs
   pinMode(nesData, INPUT);
