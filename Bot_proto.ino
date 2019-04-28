@@ -1,7 +1,7 @@
 /*
 ================================================================================
 
-    File........... NES Controller Test Code
+    File........... Bot_proto.ino
     Purpose........ To demonstrate how to interface to an buttons and a breadboard
     Author......... Alex Veloso
     E-mail......... alexvs @ gmail.com
@@ -119,15 +119,15 @@ void loop()
   } 
   else if (digitalRead(button1) == HIGH){
       Serial.println("BotaoA");
-       Keyboard.write(61);
+       Keyboard.write(0x61);
   } 
   else if (digitalRead(button2) == HIGH){
       Serial.println("BotaoB");
-       Keyboard.write(62);
+       Keyboard.write(0x62);
   } 
    else if (digitalRead(button3) == HIGH){
       Serial.println("BotaoC");
-       Keyboard.write(63);
+       Keyboard.write(0x63);
   }
    else if (Serial.read() == 'a'){
       Serial.println("Liga Led");
