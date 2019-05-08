@@ -2,7 +2,7 @@
 ================================================================================
 
     File........... Bot_proto.ino
-    Purpose........ To demonstrate how to interface to an buttons and a breadboard
+    Purpose........ To demonstrate how to interface to a buttons and a breadboard
     Author......... Alex Veloso
     E-mail......... alexvs @ gmail.com
     Started........ 16/04/2019
@@ -46,9 +46,7 @@
 //===============================================================================
 //  Constants
 //===============================================================================
-// Here we have a bunch of constants that will become clearer when we look at the
-// readNesController() function. Basically, we will use these contents to clear
-// a bit. These are chosen according to the table above.
+// 
  #include "Keyboard.h" //Arduino Leonardo
 
  
@@ -88,7 +86,7 @@ void setup()
   pinMode(button1, INPUT);
   pinMode(button2, INPUT);
   pinMode(button3, INPUT);
-  pinMode(13, OUTPUT);
+  pinMode(13, OUTPUT); //test to see feedback
    // initialize control over the keyboard:
    Keyboard.begin(); //Arduino Leonardo
 }
